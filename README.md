@@ -95,7 +95,7 @@ The statistical analysis plan was pre-registered before any ESM2 inference was r
 
 If you use ARGEvoFlow, please cite:
 
-> Gnanasekar, P. (2026). ARGEvoFlow: protein language model-based mutational tolerance scoring for the ESKAPE resistome. https://github.com/pranavathiyani/ARGEvoFlow
+> Pranavathiyani, G. (2026). ARGEvoFlow: protein language model-based mutational tolerance scoring for the ESKAPE resistome. https://github.com/pranavathiyani/ARGEvoFlow
 
 Full machine-readable metadata in [`CITATION.cff`](CITATION.cff).
 
