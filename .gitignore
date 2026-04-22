@@ -1,0 +1,101 @@
+# ===== Nextflow =====
+.nextflow*
+work/
+results/
+*.nextflow.log*
+trace-*.txt
+report-*.html
+timeline-*.html
+dag-*.html
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+.ipynb_checkpoints/
+
+# ===== Virtual environments =====
+.venv/
+venv/
+env/
+.conda/
+
+# ===== PyTorch / ML weights =====
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+models/
+checkpoints/
+
+# ===== Embeddings and large data =====
+embeddings/*.npy
+embeddings/*.npz
+embeddings/*.h5
+embeddings/*.pkl
+!embeddings/README.md
+!embeddings/.gitkeep
+
+# ===== Raw data (pull from source, don't commit) =====
+data/raw/
+data/interim/
+*.fasta
+*.fa
+*.faa
+*.fna
+*.gbk
+# but keep small reference files tracked
+!assets/**/*.fasta
+!assets/**/*.faa
+!test/test_data/**/*.fasta
+
+# ===== MSAs and alignments =====
+*.sto
+*.aln
+*.a2m
+*.a3m
+*.hmm
+
+# ===== R =====
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ===== Secrets / credentials =====
+.env
+.env.local
+*.secret
+credentials.json
+
+# ===== Temporary outputs =====
+tmp/
+temp/
+scratch/
+*.tmp
+*.bak

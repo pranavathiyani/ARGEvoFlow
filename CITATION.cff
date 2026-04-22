@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use ARGEvoFlow, please cite this software."
+type: software
+title: "ARGEvoFlow"
+abstract: >-
+  A Nextflow DSL2 pipeline for quantifying mutational tolerance of antibiotic
+  resistance genes in ESKAPE pathogens using zero-shot protein language model
+  pseudo-likelihoods, benchmarked against conservation and structure-based
+  baselines and validated against available deep mutational scanning datasets.
+authors:
+  - family-names: Gnanasekar
+    given-names: Pranavathiyani
+    affiliation: "Division of Bioinformatics, SASTRA Deemed University, Thanjavur, Tamil Nadu, India"
+    email: pranavathiyani@scbt.sastra.edu
+version: 0.1.0-alpha
+date-released: 2026-04-22
+url: "https://github.com/pranavathiyani/ARGEvoFlow"
+repository-code: "https://github.com/pranavathiyani/ARGEvoFlow"
+license: MIT
+keywords:
+  - antimicrobial-resistance
+  - antibiotic-resistance-genes
+  - protein-language-models
+  - ESM2
+  - mutational-tolerance
+  - variant-effect-prediction
+  - deep-mutational-scanning
+  - ESKAPE-pathogens
+  - nextflow
+  - bioinformatics
+  - computational-biology
+  - bacterial-evolution
+references:
+  - type: article
+    authors:
+      - family-names: Lin
+        given-names: Zeming
+    title: "Evolutionary-scale prediction of atomic-level protein structure with a language model"
+    journal: Science
+    year: 2023
+    doi: 10.1126/science.ade2574
+  - type: article
+    authors:
+      - family-names: Alcock
+        given-names: Brian P.
+    title: "CARD 2023: expanded curation, support for machine learning, and resistome prediction at the Comprehensive Antibiotic Resistance Database"
+    journal: Nucleic Acids Research
+    year: 2023
+    doi: 10.1093/nar/gkac920
+  - type: article
+    authors:
+      - family-names: Notin
+        given-names: Pascal
+    title: "ProteinGym: Large-Scale Benchmarks for Protein Fitness Prediction and Design"
+    conference:
+      name: "NeurIPS 2023"
+    year: 2023
+    doi: 10.1101/2023.12.07.570727
