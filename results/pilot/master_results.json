@@ -1,0 +1,85 @@
+{
+  "date": "2026-04-24",
+  "pipeline": "ARGEvoFlow",
+  "model": "esm2_t33_650M_UR50D",
+  "scoring": "masked_marginal",
+  "seed": 42,
+  "proteins_scored": [
+    "TEM-1 (mature, 263 aa)",
+    "AAC(6')-Ib (177 aa)"
+  ],
+  "tem1_assays": {
+    "Stiffler_2015": {
+      "n": 4996,
+      "spearman": 0.7302,
+      "ci": [
+        0.7149,
+        0.7445
+      ]
+    },
+    "Firnberg_2014": {
+      "n": 4783,
+      "spearman": 0.7377,
+      "ci": [
+        0.7227,
+        0.7523
+      ]
+    },
+    "Jacquier_2013": {
+      "n": 989,
+      "spearman": 0.6958,
+      "ci": [
+        0.6537,
+        0.7304
+      ]
+    },
+    "Deng_2012": {
+      "n": 4996,
+      "spearman": 0.5286,
+      "ci": [
+        0.5076,
+        0.5497
+      ]
+    }
+  },
+  "conservation_baseline_tem1": {
+    "msa_source": "ProteinGym BLAT_ECOLX_full_11-26-2021_b02.a2m (209,644 sequences)",
+    "msa_coverage": "215/263 mature positions",
+    "Stiffler": {
+      "esm2": 0.7736,
+      "cons": 0.4728,
+      "gap": 0.3008,
+      "partial": 0.706
+    },
+    "Firnberg": {
+      "esm2": 0.7794,
+      "cons": 0.4787,
+      "gap": 0.3007,
+      "partial": 0.7128
+    },
+    "Jacquier": {
+      "esm2": 0.7379,
+      "cons": 0.4649,
+      "gap": 0.273
+    },
+    "Deng": {
+      "esm2": 0.5739,
+      "cons": 0.3053,
+      "gap": 0.2686
+    }
+  },
+  "cross_class_generalization": {
+    "AAC6Ib_Dandage_2018": {
+      "n": 1801,
+      "spearman": 0.4904,
+      "ci": [
+        0.4526,
+        0.5246
+      ]
+    }
+  },
+  "hypotheses_tested": {
+    "H2 (DMS correlation \u2265 0.35)": "supported across all 4 TEM-1 assays + AAC",
+    "H3 (PLM > conservation)": "supported, +0.27 to +0.30 gap on TEM-1"
+  }
+}
