@@ -1,0 +1,2 @@
+assay	n_variants	spearman_rho	ci_lo_95	ci_hi_95	auc	mcc	top_recall_10pct	model	scoring	seed
+Stiffler_2015_TEM1_amp	4996	0.7302	0.7149	0.7445	0.8829	0.6277	0.2886	esm2_t33_650M_UR50D	masked_marginal	42
